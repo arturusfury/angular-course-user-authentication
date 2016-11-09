@@ -17,6 +17,9 @@
 // (if you're using LESS with the built-in default config, you'll want
 //  to change `assets/styles/importer.less` instead.)
 var cssFilesToInject = [
+  'styles/angular-toastr.css',
+  'styles/foundation.min.css',
+  'styles/app.css',
   'styles/**/*.css'
 ];
 
@@ -29,6 +32,8 @@ var jsFilesToInject = [
   'js/dependencies/sails.io.js',
   'js/dependencies/jquery.js',
   'js/dependencies/angular.js',
+  'js/dependencies/angular-toastr.min.js',
+  'js/dependencies/angular-toastr.tpls.min.js',
 
   // Dependencies like jQuery, or Angular are brought in here
   'js/dependencies/**/*.js',
