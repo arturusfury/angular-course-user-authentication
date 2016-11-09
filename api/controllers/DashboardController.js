@@ -15,6 +15,16 @@ module.exports = {
     }
   },
 
+  getUser: function(req, res) {
+    User.findOne({id: req.session.me}, function(err, user) {
+      if(err) {
+        res.negotiate(err);
+      }
+      
+      return res.send(user);
+    });
+  },
+
   logout: function(req, res) {
 
   }

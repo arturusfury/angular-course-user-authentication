@@ -1,4 +1,4 @@
-<header class="header" ng-controller="DashboardCtrl">
+<header class="header" ng-app="DashboardMod" ng-controller="DashboardCtrl" ng-init="getUser()">
   <h1 class="headline">Dashboard  <small>for {{name}}</small></h1>
   <ul class="header-subnav">
     <li><a href="#" ng-click="logout()">Logout</a></li>
