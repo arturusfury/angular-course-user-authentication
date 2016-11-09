@@ -1,18 +1,12 @@
-  <div class="small-offset-2 small-8 columns" ng-app="SignupMod" ng-controller="SignupCtrl">
-    <div class="signup-box">
+  <div class="small-offset-2 small-8 columns" ng-app="LoginMod" ng-controller="LoginCtrl">
+    <div class="login-box">
       <div class="row">
         <div class="small-12 columns">
           <h2 class="text-center">User Authentication</h2>
 
-          <p class="text-center">Please fill in the fields below to signup</p>
+          <p class="text-center">Please login or create an account</p>
 
           <form ng-submit="loginSubmit()">
-            <div class="row">
-              <div class="small-12 columns">
-                <input ng-model="name" ng-maxlength="40" type="text" name="name" placeholder="Name" required />
-              </div>
-            </div>
-
             <div class="row">
               <div class="small-12 columns">
                 <input ng-model="email" type="email" name="email" placeholder="Email Address" required />
@@ -26,17 +20,11 @@
             </div>
 
             <div class="row">
-              <div class="small-12 columns">
-                <input ng-model="password2" ng-maxlength="20" type="password" name="password2" placeholder="Confirm Password" required />
-              </div>
-            </div>
-
-            <div class="row">
               <div class="small-6 columns">
-                <input type="submit" class="button expanded" value="Create Account" />
+                <input type="submit" class="button expanded" value="Login" />
               </div>
               <div class="small-6 columns">
-                <a class="button expanded">Log In</a>
+                <a class="button expanded">Create Account</a>
               </div>
             </div>
           </form>
