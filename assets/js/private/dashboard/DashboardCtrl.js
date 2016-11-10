@@ -4,7 +4,8 @@ angular.module('DashboardMod').controller('DashboardCtrl', ['$scope', '$http', f
 
     $http.get('/getuser')
       .then(function onSuccess(user) {
-        console.log(user);
+        $scope.user = user.data;
+        console.log(user.data);
       })
       .catch(function onError(err) {
         console.log(err);

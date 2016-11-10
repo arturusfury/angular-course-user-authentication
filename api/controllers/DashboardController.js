@@ -20,12 +20,8 @@ module.exports = {
       if(err) {
         res.negotiate(err);
       }
-      
+
       return res.send(user);
     });
-  },
-
-  logout: function(req, res) {
-
   }
 };
